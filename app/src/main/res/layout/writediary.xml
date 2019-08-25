@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="T i t l e"
+            android:fontFamily="@font/bareunbatangl"
+            android:textColor="#000"
+            android:textSize="18dp"/>
+
+        <!--영화 제목입력하기-->
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:background="#E0E0E0">
+
+        <EditText
+            android:id="@+id/edit_dairy"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:layout_marginLeft="10dp"
+            android:hint="메모 할 내용을 작성해주세요"
+            android:fontFamily="@font/bareunbatangl"
+            android:textSize="15dp"
+            android:textColor="#cc723D"/>
+    </LinearLayout>
+
+    <!--저장-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <!--저장버튼 -->
+        <Button
+            android:id="@+id/button_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="saveData"
+            android:background="#fff"
+            android:text="저장"
+            android:fontFamily="@font/bareunbatangl"/>
+    </LinearLayout>
+
+    <!--저장버튼 끝 내 인생은 아직 끝 아님 -->
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--날짜-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:text=" T i t l e"
+            android:fontFamily="@font/bareunbatangl"
+            android:textColor="#000"
+            android:textSize="18dp"/>
+        <TextView
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+
+            android:fontFamily="@font/bareunbatangl"
+            android:layout_height="38dp"
+            android:textSize="15dp"
+            android:id="@+id/date"
+            />
+    </LinearLayout>
+
+    <!--일기내용-->
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#E0E0E0"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="#cc723D"
+
+
+        android:fontFamily="@font/bareunbatangl"
+        android:textSize="15dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--저장버튼-->
+        <Button
+            android:id="@+id/bprevious"
+            android:background="#fff"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="previousData"
+            android:fontFamily="@font/bareunbatangl"
+
+            android:text="이전"/>
+        <Button
+            android:id="@+id/bnext"
+            android:background="#fff"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="nextData"
+
+            android:fontFamily="@font/bareunbatangl"
+            android:text="다음"
+            />
+        <!--삭제버튼-->
+        <Button
+            android:id="@+id/bdelete"
+            android:background="#fff"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bareunbatangl"
+            android:onClick="deleteData"
+            android:text="삭제"/>
+        <!--수정버튼-->
+        <Button
+            android:id="@+id/bmodify"
+            android:background="#fff"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bareunbatangl"
+            android:onClick="modifyData"
+            android:text="수정"/>
+
+    </LinearLayout>
+
+</LinearLayout>
